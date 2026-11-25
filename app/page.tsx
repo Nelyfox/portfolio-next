@@ -157,110 +157,275 @@ export default function Home() {
       </section>
 
       {/* SECTION PROJETS */}
-      <section id="projets" className="projects">
+<section id="projets" className="projects">
 
-        <div className="projects-header">
-          <span className="section-label">
-            {fr ? "MES RÉALISATIONS" : "MY PROJECTS"}
-          </span>
+  <div className="projects-header">
+    <span className="section-label">
+      {fr ? "MES RÉALISATIONS" : "MY PROJECTS"}
+    </span>
 
-          <h2>
-            {fr ? "Des idées qui prennent" : "Ideas brought to"}
-            <span>{fr ? " vie." : " life."}</span>
-          </h2>
+    <h2>
+      {fr ? "Des idées qui prennent" : "Ideas brought to"}
+      <span>{fr ? " vie." : " life."}</span>
+    </h2>
 
-          <p>
-            {fr
-              ? "Découvrez quelques projets sur lesquels je travaille ou dont je développe actuellement la conception."
-              : "Discover some of the projects I am working on or currently designing."}
-          </p>
+    <p>
+      {fr
+        ? "Découvrez les projets que j'ai réalisés, que je développe actuellement ou que j'envisage de concrétiser."
+        : "Discover the projects I have completed, am currently developing or plan to bring to life."}
+    </p>
+  </div>
+
+  <div className="projects-container">
+
+    {/* 1. MRFINMANAGE */}
+    <article className="project-card">
+      <div className="project-image">
+        <img src="/images/projets/mrfinmanage.png" alt="MrFinManage" />
+      </div>
+
+      <div className="project-info">
+        <span className="project-status">
+          {fr ? "Réalisé" : "In development"}
+        </span>
+
+        <h3>MrFinManage</h3>
+
+        <p>
+          {fr
+            ? "Une application intelligente de gestion financière permettant de suivre ses revenus, ses dépenses et ses budgets."
+            : "An intelligent financial management application designed to track income, expenses and budgets."}
+        </p>
+
+        <div className="project-tags">
+          <span>Laravel</span>
+          <span>PHP</span>
+          <span>MariaDB</span>
         </div>
+      </div>
+    </article>
 
-        <div className="projects-container">
+    {/* 2. GENIEENQUIZ */}
+    <article className="project-card">
+      <div className="project-image">
+        <img src="/images/projets/QuizApp.png" alt="GenieEnQuiz" />
+      </div>
 
-          {/* PROJET 1 */}
-          <article className="project-card">
-            <div className="project-image">
-              <span>💜</span>
-            </div>
+      <div className="project-info">
+        <span className="project-status">
+          {fr ? "Réalisé" : "In development"}
+        </span>
 
-            <div className="project-info">
-              <span className="project-status">
-                {fr ? "En développement" : "In development"}
-              </span>
+        <h3>GenieEnQuiz <small>(GEK)</small></h3>
 
-              <h3>MrFinManage</h3>
+        <p>
+          {fr
+            ? "Une plateforme interactive de quiz permettant de tester ses connaissances dans plusieurs disciplines et différents niveaux de difficulté."
+            : "An interactive quiz platform designed to test knowledge across various subjects and difficulty levels."}
+        </p>
 
-              <p>
-                {fr
-                  ? "Une application intelligente de gestion financière permettant de suivre ses revenus, ses dépenses et ses budgets."
-                  : "An intelligent financial management application designed to track income, expenses and budgets."}
-              </p>
-
-              <div className="project-tags">
-                <span>Laravel</span>
-                <span>PHP</span>
-                <span>MariaDB</span>
-              </div>
-            </div>
-          </article>
-
-          {/* PROJET 2 */}
-          <article className="project-card">
-            <div className="project-image">
-              <span>🧩</span>
-            </div>
-
-            <div className="project-info">
-              <span className="project-status">
-                {fr ? "En développement" : "In development"}
-              </span>
-
-              <h3>QuizApp</h3>
-
-              <p>
-                {fr
-                  ? "Une application de quiz interactifs permettant aux utilisateurs de tester leurs connaissances dans différentes disciplines."
-                  : "An interactive quiz application that allows users to test their knowledge in different subjects."}
-              </p>
-
-              <div className="project-tags">
-                <span>PHP</span>
-                <span>MySQL</span>
-                <span>JavaScript</span>
-              </div>
-            </div>
-          </article>
-
-          {/* PROJET 3 : PLUMES D'OR */}
-          <article className="project-card">
-            <div className="project-image poem-image">
-              <span>❝</span>
-            </div>
-
-            <div className="project-info">
-              <span className="project-status">
-                {fr ? "Réalisé" : "Completed"}
-              </span>
-
-              <h3>Plumes D’or</h3>
-
-              <p>
-                {fr
-                  ? "Un espace littéraire dédié à la poésie, réunissant les œuvres de différents auteurs ainsi que mes propres créations. Un univers où les mots prennent vie."
-                  : "A literary space dedicated to poetry, bringing together works by different authors as well as my own creations. A world where words come to life."}
-              </p>
-
-              <div className="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Web design</span>
-              </div>
-            </div>
-          </article>
-
+        <div className="project-tags">
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>JavaScript</span>
         </div>
-      </section>
+      </div>
+    </article>
+
+    {/* 3. PLUMES D'OR */}
+    <article className="project-card">
+      <div className="project-image poem-image">
+        <img src="/images/projets/poeme.png" alt="Plumes D'or" />
+      </div>
+
+      <div className="project-info">
+        <span className="project-status">
+          {fr ? "Réalisé" : "Completed"}
+        </span>
+
+        <h3>Plumes D'or</h3>
+
+        <p>
+          {fr
+            ? "Un espace littéraire dédié à la poésie, réunissant les œuvres de différents auteurs ainsi que mes propres créations. Un univers où les mots prennent vie."
+            : "A literary space dedicated to poetry, bringing together works by different authors as well as my own creations. A world where words come to life."}
+        </p>
+
+        <div className="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Web design</span>
+        </div>
+      </div>
+    </article>
+
+    {/* 4. OLÉYIA */}
+    <article className="project-card">
+     <div className="project-image">
+        <span>🚗</span>
+      </div>
+
+      <div className="project-info">
+        <span className="project-status">
+          {fr ? "En maintenance" : "Under maintenance"}
+        </span>
+
+        <h3>Oléyia</h3>
+
+        <p>
+          {fr
+            ? "Une plateforme de covoiturage local facilitant la mise en relation des conducteurs et des passagers pour leurs déplacements."
+            : "A local carpooling platform connecting drivers and passengers for their journeys."}
+        </p>
+
+        <div className="project-tags">
+          <span>Covoiturage</span>
+          <span>Mobilité</span>
+          <span>Web</span>
+        </div>
+      </div>
+    </article>
+
+    {/* 5. MEDI FOLLOW */}
+    <article className="project-card">
+      <div className="project-image">
+        <span>🩺</span>
+      </div>
+
+      <div className="project-info">
+        <span className="project-status">
+          {fr ? "En développement" : "In development"}
+        </span>
+
+        <h3>Medi Follow</h3>
+
+        <p>
+          {fr
+            ? "Une plateforme numérique dédiée à la gestion des patients, des rendez-vous et au suivi des informations médicales."
+            : "A digital platform dedicated to patient management, appointments and medical information tracking."}
+        </p>
+
+        <div className="project-tags">
+          <span>Santé</span>
+          <span>Gestion</span>
+          <span>Suivi médical</span>
+        </div>
+      </div>
+    </article>
+
+    {/* 6. OTAKULAND */}
+    <article className="project-card">
+      <div className="project-image">
+        <span>⛩️</span>
+      </div>
+
+      <div className="project-info">
+        <span className="project-status">
+          {fr ? "Projet repris" : "Project resumed"}
+        </span>
+
+        <h3>OtakuLand</h3>
+
+        <p>
+          {fr
+            ? "Une plateforme dédiée à l'univers des animés et des mangas, destinée aux passionnés de culture japonaise."
+            : "A platform dedicated to anime and manga, designed for fans of Japanese culture."}
+        </p>
+
+        <div className="project-tags">
+          <span>Anime</span>
+          <span>Manga</span>
+          <span>Culture japonaise</span>
+        </div>
+      </div>
+    </article>
+
+    {/* 7. PLATEFORME DE SUIVI */}
+    <article className="project-card">
+      <div className="project-image">
+        <span>📍</span>
+      </div>
+
+      <div className="project-info">
+        <span className="project-status">
+          {fr ? "En réflexion" : "Under consideration"}
+        </span>
+
+        <h3>
+          {fr ? "Suivi intelligent" : "Smart Tracking"}
+        </h3>
+
+        <p>
+          {fr
+            ? "Un projet de plateforme permettant de suivre des commandes ou des véhicules à partir d'un numéro d'identification."
+            : "A platform concept for tracking orders or vehicles using an identification number."}
+        </p>
+
+        <div className="project-tags">
+          <span>Suivi</span>
+          <span>Logistique</span>
+          <span>Traçabilité</span>
+        </div>
+      </div>
+    </article>
+
+    {/* 8. ANTIVIRUS */}
+    <article className="project-card">
+      <div className="project-image">
+        <span>🛡️</span>
+      </div>
+
+      <div className="project-info">
+        <span className="project-status">
+          {fr ? "En réflexion" : "Under consideration"}
+        </span>
+
+        <h3>Antivirus</h3>
+
+        <p>
+          {fr
+            ? "Un projet de solution de sécurité informatique visant à détecter et à protéger les systèmes contre les menaces numériques."
+            : "A cybersecurity solution concept designed to detect and protect systems against digital threats."}
+        </p>
+
+        <div className="project-tags">
+          <span>Cybersécurité</span>
+          <span>Protection</span>
+          <span>Sécurité</span>
+        </div>
+      </div>
+    </article>
+
+    {/* 9. MARKET ON LINE */}
+    <article className="project-card">
+      <div className="project-image">
+        <span>🛒</span>
+      </div>
+
+      <div className="project-info">
+        <span className="project-status">
+          {fr ? "En développement" : "In development"}
+        </span>
+
+        <h3>Market On Line</h3>
+
+        <p>
+          {fr
+            ? "Un site e-commerce permettant de présenter des produits et de faciliter les achats en ligne."
+            : "An e-commerce website designed to showcase products and make online shopping easier."}
+        </p>
+
+        <div className="project-tags">
+          <span>E-commerce</span>
+          <span>Commerce</span>
+          <span>Web</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
 
       {/* SECTION CONTACT */}
       <section id="contact" className="contact">

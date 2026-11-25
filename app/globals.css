@@ -1177,3 +1177,246 @@ body {
   }
 
 }
+/* =================================
+   NELYFOX - THÈME SOMBRE ÉLÉGANT
+================================= */
+
+:root {
+  --violet-principal: #A855F7;
+  --violet-profond: #9333EA;
+  --lavande: #281B3D;
+  --blanc: #F5F0FA;
+  --noir: #F5F0FA;
+  --gris-clair: #12101B;
+}
+
+/* Fond général */
+
+body {
+  background-color: #0B0911;
+  color: #F5F0FA;
+}
+
+/* Navigation */
+
+.navbar {
+  background-color: #0B0911;
+}
+
+.nav-menu a {
+  color: #E9DDF5;
+}
+
+.menu-toggle {
+  color: #C084FC;
+}
+
+.nav-menu {
+  color: #F5F0FA;
+}
+
+@media (max-width: 650px) {
+  .nav-menu {
+    background-color: #1B1725;
+  }
+}
+
+/* Accueil */
+
+.hero {
+  background-color: #0B0911;
+}
+
+.hero-badge {
+  background-color: #281B3D;
+  color: #D8B4FE;
+}
+
+.hero-content p {
+  color: #C4BBD0;
+}
+
+.secondary-button {
+  color: #D8B4FE;
+}
+
+.secondary-button:hover {
+  background-color: #281B3D;
+}
+
+.hero-visual {
+  background-color: #21152F;
+  box-shadow: 0 15px 40px rgba(168, 85, 247, 0.15);
+}
+
+.profile-frame {
+  border-color: #A855F7;
+}
+
+/* À propos */
+
+.about {
+  background-color: #12101B;
+}
+
+.about-visual {
+  background-color: #281B3D;
+}
+
+.about-decoration h2 {
+  color: #D8B4FE;
+}
+
+.about-decoration p,
+.about-content p {
+  color: #C4BBD0;
+}
+
+/* Compétences */
+
+.skills {
+  background-color: #0B0911;
+}
+
+.skill-card {
+  background-color: #1B1725;
+  border: 1px solid #38264D;
+}
+
+.skill-card h3 {
+  color: #D8B4FE;
+}
+
+.skill-card p {
+  color: #C4BBD0;
+}
+
+/* Projets */
+
+.projects {
+  background-color: #12101B;
+}
+
+.project-card {
+  background-color: #1B1725;
+  border: 1px solid #38264D;
+}
+
+.project-card:hover {
+  box-shadow: 0 15px 35px rgba(168, 85, 247, 0.18);
+}
+
+.project-image {
+  background-color: #281B3D;
+}
+
+.project-info h3 {
+  color: #D8B4FE;
+}
+
+.project-info p {
+  color: #C4BBD0;
+}
+
+.project-status {
+  background-color: #38264D;
+  color: #E9D5FF;
+}
+
+.project-tags span {
+  background-color: #281B3D;
+  color: #D8B4FE;
+}
+
+.poem-image {
+  background: linear-gradient(135deg, #21152F, #493064);
+}
+
+.poem-image span {
+  color: #D8B4FE;
+}
+
+/* Contact */
+
+.contact {
+  background-color: #0B0911;
+}
+
+.contact-content p {
+  color: #C4BBD0;
+}
+
+.contact-decoration {
+  background-color: #281B3D;
+}
+
+.contact-decoration p {
+  color: #D8B4FE;
+}
+
+/* Formulaire */
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #1B1725;
+  border: 1px solid #493064;
+  color: #F5F0FA;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #A99AB8;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #A855F7;
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+}
+
+.contact-form p {
+  color: #C084FC;
+}
+
+/* Réseaux sociaux */
+
+.social-links a {
+  color: #D8B4FE;
+}
+
+/* Pied de page */
+
+.footer {
+  background-color: #12101B;
+}
+
+.footer-top > p,
+.footer-bottom p {
+  color: #BDB0CB;
+}
+
+.footer-links a {
+  color: #E9DDF5;
+}
+
+.footer-bottom {
+  border-top-color: #38264D;
+}
+
+/* Bouton de langue */
+
+.language-toggle {
+  color: #D8B4FE;
+  border-color: #A855F7;
+}
+
+.language-toggle:hover {
+  background-color: #A855F7;
+  color: #FFFFFF;
+}
+
+/* Signature */
+
+.credo {
+  color: #C084FC;
+}
