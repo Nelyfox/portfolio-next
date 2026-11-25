@@ -182,7 +182,7 @@ export default function Home() {
     {/* 1. MRFINMANAGE */}
     <article className="project-card">
       <div className="project-image">
-        <img src="/images/projets/mrfinmanage.PNG" alt="MrFinManage" />
+        <img src="/images/projets/MrFinManage.PNG" alt="MrFinManage" />
       </div>
 
       <div className="project-info">
