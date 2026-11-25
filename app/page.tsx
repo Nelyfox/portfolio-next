@@ -1,5 +1,6 @@
 "use client";
 
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
@@ -181,7 +182,7 @@ export default function Home() {
     {/* 1. MRFINMANAGE */}
     <article className="project-card">
       <div className="project-image">
-        <img src="/images/projets/mrfinmanage.png" alt="MrFinManage" />
+        <img src="/images/projets/mrfinmanage.PNG" alt="MrFinManage" />
       </div>
 
       <div className="project-info">
@@ -208,7 +209,7 @@ export default function Home() {
     {/* 2. GENIEENQUIZ */}
     <article className="project-card">
       <div className="project-image">
-        <img src="/images/projets/QuizApp.png" alt="GenieEnQuiz" />
+        <img src="/images/projets/QuizApp.PNG" alt="GenieEnQuiz" />
       </div>
 
       <div className="project-info">
@@ -235,7 +236,7 @@ export default function Home() {
     {/* 3. PLUMES D'OR */}
     <article className="project-card">
       <div className="project-image poem-image">
-        <img src="/images/projets/poeme.png" alt="Plumes D'or" />
+        <img src="/images/projets/Poeme.PNG" alt="Plumes D'or" />
       </div>
 
       <div className="project-info">
@@ -452,16 +453,20 @@ export default function Home() {
             href="https://github.com/Nelyfox"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
-            GitHub
+            <FaGithub size={20} />
+            <span>GitHub</span>
           </a>
 
           <a
             href="https://www.linkedin.com/in/noëlie-badagbon-384201356/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
-            LinkedIn
+            <FaLinkedin size={20} />
+            <span>LinkedIn</span>
           </a>
         </div>
 
